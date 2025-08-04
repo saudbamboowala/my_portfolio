@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const LandingPage = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -434,7 +434,7 @@ const LandingPage = () => {
               { label: "Epistola Electronica", value: "saud@scholarly.academy", icon: "📧" },
               { label: "Academia Locus", value: "Mumbai, Bharat", icon: "🏛️" },
               { label: "Status Academicus", value: "Available for Commission", icon: "📜" }
-            ].map((contact, index) => (
+            ].map((contact) => (
               <div key={contact.label} className="p-6 bg-slate-900/40 backdrop-blur-lg rounded-2xl border border-amber-600/20 hover:border-amber-600/50 transition-all duration-300 shadow-lg">
                 <div className="text-3xl mb-3 filter drop-shadow-lg">{contact.icon}</div>
                 <div className="text-sm text-amber-400 mb-2 font-serif tracking-wide">{contact.label}</div>

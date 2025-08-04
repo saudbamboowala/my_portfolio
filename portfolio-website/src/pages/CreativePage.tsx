@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const LandingPage = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -137,7 +137,7 @@ const LandingPage = () => {
       <nav className="fixed top-8 left-1/2 transform -translate-x-1/2 z-40">
         <div className="bg-white/10 backdrop-blur-lg rounded-full px-8 py-4 border border-white/20">
           <div className="flex space-x-8">
-            {['Home', 'Work', 'About', 'Contact'].map((item, index) => (
+            {['Home', 'Work', 'About', 'Contact'].map((item) => (
               <a 
                 key={item} 
                 href={`#${item.toLowerCase()}`}
@@ -368,7 +368,7 @@ const LandingPage = () => {
               { label: "Email", value: "saud@example.com", icon: "📧" },
               { label: "Location", value: "Mumbai, India", icon: "🌍" },
               { label: "Status", value: "Available for Projects", icon: "✅" }
-            ].map((contact, index) => (
+            ].map((contact) => (
               <div key={contact.label} className="p-6 bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 hover:border-white/30 transition-all duration-300">
                 <div className="text-3xl mb-3">{contact.icon}</div>
                 <div className="text-sm text-white/60 mb-2">{contact.label}</div>

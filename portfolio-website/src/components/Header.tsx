@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 // Simple SVG icons as components
 const MenuIcon = () => (
